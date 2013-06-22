@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2D2C42D8-A31E-4A1F-8400-64FC13A7725A}</ProjectGuid>
+    <ProjectGuid>{8FE4D4BC-6BE7-45D9-A25B-59795C218B3A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjetoFinal</RootNamespace>
-    <AssemblyName>ProjetoFinal</AssemblyName>
+    <RootNamespace>ProjetctoFinalLP</RootNamespace>
+    <AssemblyName>ProjetctoFinalLP</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -51,7 +51,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,17 +61,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alterar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Alterar.Designer.cs">
-      <DependentUpon>Alterar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Eliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Eliminar.Designer.cs">
-      <DependentUpon>Eliminar.cs</DependentUpon>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Inserir.cs">
       <SubType>Form</SubType>
@@ -94,12 +86,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Alterar.resx">
-      <DependentUpon>Alterar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Eliminar.resx">
-      <DependentUpon>Eliminar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Inserir.resx">
       <DependentUpon>Inserir.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +105,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="app.config" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,12 +127,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database2.mdf">
+    <Content Include="Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Database2_log.ldf">
+    <Content Include="Database1_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database2.mdf</DependentUpon>
+      <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

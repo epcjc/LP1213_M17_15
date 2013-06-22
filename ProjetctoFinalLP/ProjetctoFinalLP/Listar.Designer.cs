@@ -1,6 +1,6 @@
-﻿namespace ProjetoFinal
+﻿namespace ProjetctoFinalLP
 {
-    partial class Inserir
+    partial class Listar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Inserir
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(252, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 33);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Site Temático";
+            // 
+            // Listar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(556, 266);
-            this.Name = "Inserir";
-            this.Text = "Inserir";
+            this.ClientSize = new System.Drawing.Size(690, 264);
+            this.Controls.Add(this.label1);
+            this.Name = "Listar";
+            this.Text = "Listar";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }
