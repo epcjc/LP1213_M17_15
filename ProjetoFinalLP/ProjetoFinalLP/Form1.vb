@@ -85,5 +85,14 @@
             MessageBox.Show("Erro!", "Empresa :: Clientes", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
+
+
+    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
+
     End Sub
+
+    Private Function DataGridView1() As Object
+        Throw New NotImplementedException
+    End Function
+
 End Class
